@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -p1A | LC_ALL=C sort -d | sed -e 's/\([^\/]\)$/&,/' -e 's/\(\/\)$/\1/' | tr '\n' ','
+ls -p1A | LC_ALL=C sort -d | sed -e 's/\([^\/]\)$/&,/' -e 's/\(\/\)$/\1/' | tr '\n' ',' | sed 's/,$/\n/'
