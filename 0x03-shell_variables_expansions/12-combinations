@@ -1,9 +1,2 @@
 #!/bin/bash
-for ((i=0; i<26; i++)); do
-    for ((j=0; j<26; j++)); do
-        letter1=$(printf "%c" $((i+97)))
-        letter2=$(printf "%c" $((j+97)))
-
-        if [[ "$letter1$letter2" != "oo" ]]; then
-            # Print the combination
-            printf "%s%s\n" $letter1 $letter2
+echo {a..z}{a..z} | tr ' ' '\n' | grep -v oo
