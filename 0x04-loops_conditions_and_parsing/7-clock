@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# displays hours of a clock
+hrs=0
+mins=1
+while [ $hrs -lt 13 ]
+do
+	echo "Hour: $hrs"
+	while [ $mins -ne 60 ]
+	do
+		echo $mins
+		((mins++))
+	done
+	mins=1
+	((hrs++))
+done
