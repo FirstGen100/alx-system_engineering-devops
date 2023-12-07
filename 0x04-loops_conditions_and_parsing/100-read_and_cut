@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/usr/bin/env bash
 #Displays the content of the file /etc/passwd
 path="/etc/password"
 while IFS=: read -r line
