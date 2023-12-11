@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#find processes with the bash keywoard
+ps -auxf | grep bash
